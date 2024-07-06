@@ -12,13 +12,13 @@
 
 // Solution:
 // Iterate over the array
-// Create counter for positive, negative, and zeros
+// Create counter for positive, negative, and zeros uisng reducer
 
 const arr1: number[] = [-1, -1, 0, 1, 1];
 
 function plusMinus(arr: number[]): void {
-    const len: number = arr.length;
-    const count = arr.reduce(
+  const len: number = arr.length;
+  const count = arr.reduce(
     (
       acc: { positives: number; negatives: number; zeros: number },
       num: number
@@ -31,9 +31,9 @@ function plusMinus(arr: number[]): void {
     { positives: 0, negatives: 0, zeros: 0 }
   );
 
-  console.log((count.positives/len).toFixed(6));
-  console.log((count.negatives/len).toFixed(6));
-  console.log((count.zeros/len).toFixed(6));
+  console.log((count.positives / len).toFixed(6));
+  console.log((count.negatives / len).toFixed(6));
+  console.log((count.zeros / len).toFixed(6));
 }
 
 plusMinus(arr1);
