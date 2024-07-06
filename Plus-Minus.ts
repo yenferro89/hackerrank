@@ -31,9 +31,9 @@ function plusMinus(arr: number[]): void {
     { positives: 0, negatives: 0, zeros: 0 }
   );
 
-  console.log((count.positives).toFixed(6));
-  console.log((count.negatives).toFixed(6));
-  console.log((count.zeros).toFixed(6));
+  console.log((count.positives/len).toFixed(6));
+  console.log((count.negatives/len).toFixed(6));
+  console.log((count.zeros/len).toFixed(6));
 }
 
 plusMinus(arr1);
