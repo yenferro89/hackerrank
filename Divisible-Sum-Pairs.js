@@ -23,9 +23,7 @@ function divisibleSumPairs(n, k, ar) {
     var freq = new Array(k).fill(0);
     for (var i = 0; i < n; i++) {
         var remainder = ar[i] % k;
-        console.log("Remainder: ", remainder);
         var complement = (k - remainder) % k;
-        console.log("Complement: ", complement);
         count += freq[complement];
         freq[remainder]++;
     }
